@@ -1,0 +1,15 @@
+<html>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <form method = "POST" action="http://localhost:8000/inbox/sent"
+    <center>
+        <div style = "width:60%; height: 10%; border:thick; display:flex; align-content: left"></div>
+            <label>To: </label><input name = "recipient" style = "width:60%"><br>
+            <label>From: </label><input name  = "sender" readonly="true" value="<%=sender%>" style = "width:60%"><br>
+            <label>Subject:</label><input name = "subject" style = "width:60%"><br><br>
+            <div>
+                <textarea name = "content" style = "width:50%; height:40%; display: flex;border:solid; background-color: aliceblue "></textarea>
+            </div>
+        </div>
+    </center>
+    <button class = "btn btn-primary" style="width:30%" type = "submit">Send</button>
+</html>
